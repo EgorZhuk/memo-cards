@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
 
+  width: max-content;
   padding: 0.5rem 1.75rem;
 
   font-family: var(--font-family);
@@ -23,11 +24,6 @@
 
   &:disabled {
     cursor: initial;
-  }
-
-  &.fullWidth {
-    justify-content: center;
-    width: 100%;
   }
 }
 
@@ -115,5 +111,6 @@
 }
 
 .fullWidth {
-  @include button;
+  justify-content: center;
+  width: 100%;
 }
